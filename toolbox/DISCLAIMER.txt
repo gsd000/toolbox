@@ -1,0 +1,2 @@
+Currently there's an error that makes it so the window doesnt really go away when the plugin is disabled, only the buttons do.
+Make sure to read README.txt

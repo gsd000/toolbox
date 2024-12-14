@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp5epo8a8ogl4"]
+
+[ext_resource type="Script" path="res://addons/toolbox/controllers/fpsmovement.gd" id="1_u4e2k"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_77mba"]
+
+[node name="FPS_player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13017, 0)
+script = ExtResource("1_u4e2k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_77mba")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.512056, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00190473, 0)

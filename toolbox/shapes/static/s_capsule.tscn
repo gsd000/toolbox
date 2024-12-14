@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://6bf828pfxqxp"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pia6n"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jqpnx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mvb4h"]
+
+[node name="s_capsule" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_pia6n")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_jqpnx")
+surface_material_override/0 = SubResource("StandardMaterial3D_mvb4h")
